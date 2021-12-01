@@ -3,7 +3,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 const slide = trigger('slide', [
     state('in', style({
         /* maxHeight: 300 */
-        height: '100vh'
+        height: 'calc(100vh - 82px)'
     })),
     state('out', style({
         /* maxHeight: 0 */
