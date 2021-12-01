@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*
+    Breakpoints:
+        - Extra small devices(phones): 600px and down
+        - Small devices(Tablets): 600px and up
+        - Medium devices(Landscape tablets): 768px and up
+        - Large devices(Laptops): 992px and up
+        - Extra large devices(Large laptops and desktop): 1200px and up
+*/
+
+@import url(assets/styles/reset.min.css);
+@import url(assets/styles/components.css);
+
+:root {
+    --primary-color: #2deeb9;
+    --primary-color-hover: #11d4a0;
+    --secondary-color: #b0b0b0;
+    --secondary-color-hover: #969696;
+    --section-bg-color: #f3f3f3;
+    --footer-color: #595959;
+}
+
+body, button {
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main {
+    min-height: 80vh;
+    z-index: 1;
+}
+
+section {
+    padding: 1em 0;
+}
+
+.iconx1_5 {
+    transform: scale(1.5);
+}
+
+.iconx2 {
+    transform: scale(2);
+}
+
+.section-bg-color {
+    background-color: var(--section-bg-color);
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
