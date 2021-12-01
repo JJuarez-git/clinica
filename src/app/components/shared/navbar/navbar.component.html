@@ -1,0 +1,21 @@
+<header>
+    <div class="nav-bar container">
+        <div class="nav-header" [routerLink]="['inicio']">
+            <img src="assets/img/logo-192.png" alt="clinica lillo logo" height="50" width="50">
+            <h1>
+                <span>{{title.split(' ')[0]}}</span>
+                <span>{{title.split(' ')[1] | uppercase}}</span>
+            </h1>
+        </div>
+
+        <nav class="nav-list">
+            <mat-icon *ngIf="open" id="close-icon" class="iconx1_5" aria-hidden="false" aria-label="close icon" (click)="closeNav()">close</mat-icon>
+            <mat-icon *ngIf="!open" id="menu-icon" class="iconx1_5" aria-hidden="false" aria-label="menu icon" (click)="openNav()">menu</mat-icon>
+            <ul [@slide]="stateName">
+                <li *ngFor="let value of links">
+                    <a [routerLink]=[value.link] routerLinkActive="active-link" (click)="closeNav()">{{value.title | uppercase}}</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
