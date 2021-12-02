@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import footerData from 'src/app/mocks/footer';
 import { environment } from '../../../../environments/environment';
 
 @Component({
@@ -10,6 +11,7 @@ export class FooterComponent implements OnInit {
 
   title = environment.title
   year = new Date().getFullYear();
+  footer = footerData
 
   constructor() { }
 

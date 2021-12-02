@@ -4,7 +4,7 @@
             <img src="assets/img/logo-192.png" alt="clinica lillo logo" height="50" width="50">
             <h1>
                 <span>{{title.split(' ')[0]}}</span>
-                <span>{{title.split(' ')[1] | uppercase}}</span>
+                <span>{{title.split(' ')[1]}}</span>
             </h1>
         </div>
 
@@ -19,3 +19,5 @@
         </nav>
     </div>
 </header>
+
+<div *ngIf="open" class="slideNav-backdrop"></div>

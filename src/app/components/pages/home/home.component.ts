@@ -10,6 +10,7 @@ import especialidades from '../../../mocks/especialidades';
 })
 export class HomeComponent implements OnInit {
 
+  name = environment.title
   title = `Inicio | ${environment.title}`
   endo = especialidades.estetica_dental;
 

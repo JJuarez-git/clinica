@@ -24,3 +24,34 @@
 .btn-secondary:hover {
     background-color: var(--secondary-color-hover);
 }
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    font-size: 1.7em;
+}
+
+.sub-title {
+    font-size: 1.2em;
+}
+
+.iconx1_5 {
+    transform: scale(1.5);
+}
+
+.iconx2 {
+    transform: scale(2);
+}
+
+.section-bg-color, .section-no-bg {
+    padding: 1em 0;
+}
+
+.section-bg-color {
+    background-color: var(--section-bg-color);
+}

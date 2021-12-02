@@ -26,36 +26,21 @@ body, button {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6, .title, .sub-title {
     font-family: 'Outfit', sans-serif;
 }
 
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 main {
-    min-height: 80vh;
+    min-height: calc(100vh - (82px + 233px)); /* 100vh - (altura nav + altura footer) */
     z-index: 1;
 }
 
-section {
-    padding: 1em 0;
+.primary {
+    color: var(--primary-color);
 }
 
-.iconx1_5 {
-    transform: scale(1.5);
-}
-
-.iconx2 {
-    transform: scale(2);
-}
-
-.section-bg-color {
-    background-color: var(--section-bg-color);
+.secondary {
+    color: var(--secondary-color);
 }
 
 .fadeIn {

@@ -1,3 +1,31 @@
 .home {
-    
+    /* height: 200vh; */
+}
+
+.jumbotron {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.jumbotron h2 {
+    font-size: 2.2em;
+}
+
+.jumbotron h4 {
+    font-weight: 300;
+}
+
+.jumbotron > * {
+    margin: 1em 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .jumbotron {
+        text-align: left;
+    }
+
+    .jumbotron > * {
+        width: 70%;
+    }
 }
