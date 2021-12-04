@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { environment } from 'src/environments/environment';
 import especialidades from '../../../mocks/especialidades';
+import info from 'src/app/mocks/info';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +10,8 @@ import especialidades from '../../../mocks/especialidades';
 })
 export class HomeComponent implements OnInit {
 
-  name = environment.title
-  title = `Inicio | ${environment.title}`
+  name = info.title
+  title = `Inicio | ${info.title}`
   endo = especialidades.estetica_dental;
 
   constructor(

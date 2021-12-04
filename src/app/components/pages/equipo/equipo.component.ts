@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { environment } from 'src/environments/environment';
+import info from 'src/app/mocks/info';
 
 @Component({
   selector: 'app-equipo',
@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class EquipoComponent implements OnInit {
 
-  title = `Equipo Médico | ${environment.title}`
+  title = `Equipo Médico | ${info.title}`
 
   constructor(
     private titleService: Title
