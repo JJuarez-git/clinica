@@ -13,61 +13,74 @@
 @import url(assets/styles/components.css);
 
 :root {
-    --primary-color: #2deeb9;
-    --primary-color-hover: #11d4a0;
-    --secondary-color: #b0b0b0;
-    --secondary-color-hover: #969696;
-    --section-bg-color: #f3f3f3;
-    --footer-color: #595959;
+   --primary-color: #2deeb9;
+   --primary-color-hover: #11d4a0;
+   --secondary-color: #b0b0b0;
+   --secondary-color-hover: #969696;
+   --section-bg-color: #f3f3f3;
+   --footer-color: #595959;
+   --optional-footer-color: #0a755b;
 }
 
-body, button {
-    font-size: 1em;
-    font-family: 'Source Sans Pro', sans-serif;
+body,
+button {
+   font-size: 1em;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6, .title, .sub-title {
-    font-family: 'Outfit', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.sub-title {
+   font-family: 'Outfit', sans-serif;
 }
 
 main {
-    min-height: calc(100vh - (82px + 233px)); /* 100vh - (altura nav + altura footer) */
-    z-index: 1;
+   /* 100vh - (altura nav + altura footer) */
+   min-height: calc(100vh - (82px + 282px)); 
+   z-index: 1;
 }
 
 .primary {
-    color: var(--primary-color);
+   color: var(--primary-color);
 }
 
 .secondary {
-    color: var(--secondary-color);
+   color: var(--secondary-color);
 }
 
 .fadeIn {
-    animation: fadeIn 1s ease both;
+   animation: fadeIn 1s ease both;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+   0% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 1;
+   }
 }
 
 @media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
+   .container {
+      width: 750px;
+   }
 }
+
 @media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
+   .container {
+      width: 970px;
+   }
 }
+
 @media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
+   .container {
+      width: 1170px;
+   }
 }
