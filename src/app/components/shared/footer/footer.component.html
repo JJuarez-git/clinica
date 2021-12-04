@@ -1,54 +1,67 @@
 <footer>
-    <div class="footer-grid container">
-        <div class="grid-col">
-            <div class="fcard">
-                <div class="fcard-title">
-                    <h3 class="sub-title">
-                        {{footer.contacto.title | uppercase}}
-                    </h3>
-                </div>
-                <div class="fcard-body">
-                    <ul>
-                        <li id="footer-movil">{{footer.contacto.info.movil}}</li>
-                        <li id="footer-email">{{footer.contacto.info.email}}</li>
-                        <li id="footer-locate">{{footer.contacto.info.localizacion}}</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+   <div class="footer-grid container">
 
-        <div class="grid-col">
-            <div class="fcard">
-                <div class="fcard-title">
-                    <h3 class="sub-title">
-                        {{footer.horario.title | uppercase}}
-                    </h3>
-                </div>
-                <div class="fcard-body">
-                    <ul>
-                        <li>Lunes - Viernes {{footer.horario.dias.lunes_viernes}}</li>
-                        <li>Sábado {{footer.horario.dias.sabado}}</li>
-                        <li>Domigo {{footer.horario.dias.domingo}}</li>
-                    </ul>
-                </div>
+      <div class="grid-col">
+         <div class="fcard">
+            <div class="fcard-title">
+               <h3 class="sub-title">
+                  {{footer.rrss.title | uppercase}}
+               </h3>
             </div>
-        </div>
+            <div class="fcard-body">
+               <div class="hr"></div>
+               <div class="footer-icons">
 
-        <div class="grid-col">
-            <div class="fcard">
-                <div class="fcard-title">
-                    <h3 class="sub-title">
-                        {{footer.rrss.title | uppercase}}
-                    </h3>
-                </div>
-                <div class="fcard-body">
-                    
-                </div>
+                  <div class="footer-icon" *ngFor="let value of footer.rrss.links">
+                     <a [href]="value.url" target="_blank" [title]="value.name" rel="noreferrer noopener">
+                        <img [src]="value.icon" [alt]="value.name" height="24" width="24">
+                     </a>
+                  </div>
+
+               </div>
             </div>
-        </div>
+         </div>
+      </div>
 
-        <div class="grid-col">
-            <p>{{title}} {{year}}. Todos los derechos reservados</p>
-        </div>
-    </div>
+      <div class="grid-col">
+         <div class="fcard">
+            <div class="fcard-title">
+               <h3 class="sub-title">
+                  {{footer.contacto.title | uppercase}}
+               </h3>
+            </div>
+            <div class="fcard-body">
+               <div class="hr"></div>
+               <ul>
+                  <li id="footer-movil">{{footer.contacto.info.movil}}</li>
+                  <li id="footer-email">{{footer.contacto.info.email}}</li>
+                  <li id="footer-locate">{{footer.contacto.info.localizacion}}</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="grid-col">
+         <div class="fcard">
+            <div class="fcard-title">
+               <h3 class="sub-title">
+                  {{footer.horario.title | uppercase}}
+               </h3>
+            </div>
+            <div class="fcard-body">
+               <div class="hr"></div>
+               <ul id="horario">
+                  <li *ngFor="let value of footer.horario.dias">
+                     <span>{{value.dia}}</span>
+                     <span>{{value.horas}}</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
+      <div class="grid-col">
+         <p>{{title}} {{year}}. Todos los derechos reservados</p>
+      </div>
+   </div>
 </footer>

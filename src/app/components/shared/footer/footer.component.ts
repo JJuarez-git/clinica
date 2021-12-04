@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import footerData from 'src/app/mocks/footer';
-import { environment } from '../../../../environments/environment';
+import info from '../../../mocks/info';
 
 @Component({
   selector: 'app-footer',
@@ -9,13 +9,14 @@ import { environment } from '../../../../environments/environment';
 })
 export class FooterComponent implements OnInit {
 
-  title = environment.title
-  year = new Date().getFullYear();
-  footer = footerData
+   title = info.title
+   year = new Date().getFullYear();
+   footer = footerData
 
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
 }
