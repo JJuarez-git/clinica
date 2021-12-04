@@ -13,7 +13,7 @@
             <mat-icon *ngIf="!open" id="menu-icon" class="iconx1_5" aria-hidden="false" aria-label="menu icon" (click)="openNav()">menu</mat-icon>
             <ul [@slide]="stateName">
                 <li *ngFor="let value of links">
-                    <a [routerLink]=[value.link] routerLinkActive="active-link" (click)="closeNav()">{{value.title | uppercase}}</a>
+                    <a [routerLink]=[value.link] routerLinkActive="active-link" (click)="closeNavFromLink()">{{value.title | uppercase}}</a>
                 </li>
             </ul>
         </nav>

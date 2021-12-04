@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import slide from 'src/app/animations/slide';
-import { environment } from '../../../../environments/environment';
+import info from '../../../mocks/info';
 
 const nav_links = [
   {
@@ -28,7 +28,7 @@ const nav_links = [
 })
 export class NavbarComponent implements OnInit {
 
-  title = environment.title
+  title = info.title
   links = nav_links
   open = false
 
@@ -45,7 +45,11 @@ export class NavbarComponent implements OnInit {
 
   closeNav() {
     this.open = false
-    window.scrollTo(0,0)
   }
+
+  closeNavFromLink() {
+   this.open = false
+   window.scrollTo(0,0)
+ }
 
 }
