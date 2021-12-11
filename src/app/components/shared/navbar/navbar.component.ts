@@ -28,7 +28,7 @@ const nav_links = [
 })
 export class NavbarComponent implements OnInit {
 
-  title = info.title
+  title = info.title.split(' ')
   links = nav_links
   open = false
 
