@@ -8,9 +8,85 @@
       </div>
    </section>
 
-   <section class="section-no-bg">
-      <div class="container">
+   <section class="section-no-bg" style="padding: 4em 0 2em;">
+      <div class="contact-grid container">
+
+         <div class="grid-col">
+            <div class="card">
+               <div class="card-title">
+                  <p class="sub-title">Llama o escríbenos</p>
+               </div>
+               <div class="hr bg-secondary"></div>
+               <div class="card-body">
+                  <ul class="text-secondary">
+                     <li id="contact-movil">
+                        <!-- <span class="text-black">Móvil:</span> --> {{data.contacto.info.movil}}
+                     </li>
+                     <li id="contact-email">
+                        <!-- <span class="text-black">Email:</span> --> {{data.contacto.info.email}}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="grid-col">
+            <div class="card">
+               <div class="card-title">
+                  <p class="sub-title">Dirección</p>
+               </div>
+               <div class="hr bg-secondary"></div>
+               <div class="card-body">
+                  <ul class="text-secondary">
+                     <li id="contact-locate">
+                        {{data.contacto.info.localizacion}}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+         <div class="grid-col">
+            <div class="card">
+               <div class="card-title">
+                  <p class="sub-title">{{data.horario.title}}</p>
+               </div>
+               <div class="hr bg-secondary"></div>
+               <div class="card-body">
+                  <ul id="contact-horario" class="text-secondary">
+                     <li *ngFor="let value of data.horario.dias">
+                        <span>{{value.dia}}</span>
+                        <span>{{value.horas}}</span>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
 
       </div>
    </section>
+
+   <section class="section-no-bg">
+      <div class="container">
+         <div class="jumbotron text-center">
+            <p class="sub-title">Siempre dispuestos a <span class="text-primary">recibirte</span> en nuestra clínica
+            </p>
+            <span class="material-icons d-block">
+               keyboard_double_arrow_down
+            </span>
+         </div>
+      </div>
+   </section>
+
+   <section class="section-no-bg" style="padding-bottom: 2em;">
+      <div class="container">
+
+         <p class="sub-title">Nuestra localización</p>
+         <div class="hr bg-secondary" style="margin: .5em 0;"></div>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.2845592296453!2d-3.309085811734523!3d39.72459153716638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd69c45716693f23%3A0x4dd2eabf729ded78!2sLillo!5e0!3m2!1ses!2ses!4v1640128972659!5m2!1ses!2ses"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+   </section>
+
 </div>

@@ -1,0 +1,59 @@
+.contact-grid {
+   display: grid;
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+   /* padding: 0 5em; */
+   gap: 1em;
+}
+
+.grid-col {
+   /* border: 1px solid red; */
+}
+
+.card {
+   height: 100%;
+}
+
+#contact-movil, #contact-email, #contact-locate {
+   padding-left: 1.5em;
+   position: relative;
+}
+
+#contact-movil::before, #contact-email::before, #contact-locate::before {
+   font-family: "Material Icons";
+   margin-right: .3em;
+   position: absolute;
+   left: 0;
+}
+
+#contact-movil::before {
+   content: "\e0cd";
+}
+
+#contact-email::before {
+   content: "\e158";
+}
+
+#contact-locate::before {
+   content: "\e0c8";
+}
+
+#contact-horario > li {
+   display: flex;
+   justify-content: space-between;
+} 
+
+iframe {
+   width: 100% !important;
+}
+
+@media (min-width: 600px) {
+   .contact-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+   }
+}
+
+@media (min-width: 768px) {
+   .contact-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+   }
+}

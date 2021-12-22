@@ -45,14 +45,6 @@ main {
    z-index: 1;
 }
 
-.primary {
-   color: var(--primary-color);
-}
-
-.secondary {
-   color: var(--secondary-color);
-}
-
 .fadeIn {
    animation: fadeIn 1s ease both;
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title,  } from '@angular/platform-browser';
 import info from 'src/app/mocks/info';
+import footerData from 'src/app/mocks/footer';
 
 @Component({
   selector: 'app-contact',
@@ -10,6 +11,7 @@ import info from 'src/app/mocks/info';
 export class ContactComponent implements OnInit {
 
   title = `Contacto | ${info.title}`
+  data = footerData
 
   constructor(
     private titleService: Title
