@@ -1,16 +1,15 @@
 .contact-grid {
    display: grid;
    grid-template-columns: repeat(1, minmax(0, 1fr));
-   /* padding: 0 5em; */
    gap: 1em;
-}
-
-.grid-col {
-   /* border: 1px solid red; */
 }
 
 .card {
    height: 100%;
+}
+
+#cards-section {
+   padding: 2em 0;
 }
 
 #contact-movil, #contact-email, #contact-locate {
@@ -49,7 +48,7 @@ iframe {
 @media (min-width: 600px) {
    .contact-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-   }
+   } 
 }
 
 @media (min-width: 768px) {

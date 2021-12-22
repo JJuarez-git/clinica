@@ -12,6 +12,7 @@ export class ContactComponent implements OnInit {
 
   title = `Contacto | ${info.title}`
   data = footerData
+  clinicaName = info.title
 
   constructor(
     private titleService: Title
