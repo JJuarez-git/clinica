@@ -11,7 +11,7 @@
    <section class="section-no-bg" style="padding-top: 2em;">
       <div class="container text-center space-y-1">
          <p class="sub-title">Nuestros datos de contacto <span class="text-primary d-inline-block">a tu disposición</span></p>
-         <p>Te esperamos en {{clinicaName}}</p>
+         <p class="text-secondary">Te esperamos en {{clinicaName}}</p>
       </div>
    </section>
 
@@ -25,7 +25,7 @@
                </div>
                <div class="hr bg-primary"></div>
                <div class="card-body">
-                  <ul class="text-secondary">
+                  <ul>
                      <li id="contact-movil">
                         {{data.contacto.info.movil}}
                      </li>
@@ -44,7 +44,7 @@
                </div>
                <div class="hr bg-primary"></div>
                <div class="card-body">
-                  <ul class="text-secondary">
+                  <ul>
                      <li id="contact-locate">
                         {{data.contacto.info.localizacion}}
                      </li>
@@ -60,7 +60,7 @@
                </div>
                <div class="hr bg-primary"></div>
                <div class="card-body">
-                  <ul id="contact-horario" class="text-secondary">
+                  <ul id="contact-horario">
                      <li *ngFor="let value of data.horario.dias">
                         <span class="text-600">{{value.dia}}</span>
                         <span>{{value.horas}}</span>
