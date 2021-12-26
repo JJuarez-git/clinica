@@ -12,7 +12,6 @@ export class HomeComponent implements OnInit {
 
   name = info.title
   title = `Inicio | ${info.title}`
-  endo = especialidades.estetica_dental;
 
   constructor(
     private titleService: Title

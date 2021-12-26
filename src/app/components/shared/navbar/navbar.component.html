@@ -1,6 +1,6 @@
 <header>
     <div class="nav-bar container">
-        <div class="nav-header" [routerLink]="['inicio']">
+        <div class="nav-header" [routerLink]="['inicio']" (click)="closeNavFromLink()">
             <img src="assets/img/logo-192.png" alt="clinica lillo logo" height="50" width="50">
             <h1>
                 <span>{{title[0]}} {{title[1]}}</span>
