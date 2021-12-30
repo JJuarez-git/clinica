@@ -22,10 +22,6 @@
    --optional-footer-color: #0a755b;
 }
 
-html {
-   scroll-behavior: smooth;
-}
-
 body,
 button {
    font-size: 1em;

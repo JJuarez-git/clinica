@@ -15,6 +15,7 @@ import { EquipoComponent } from './components/pages/equipo/equipo.component';
 
 //MATERIAL
 import { MatIconModule } from '@angular/material/icon';
+import { EspecialidadComponent } from './components/pages/especialidad/especialidad.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     ContactComponent,
     EspecialidadesComponent,
     FooterComponent,
-    EquipoComponent
+    EquipoComponent,
+    EspecialidadComponent
   ],
   imports: [
     BrowserModule,

@@ -21,4 +21,8 @@ export class EspecialidadesComponent implements OnInit {
     this.titleService.setTitle(this.title)
   }
 
+  goTop(): void {
+     window.scrollTo(0,0)
+  }
+
 }
