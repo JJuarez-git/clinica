@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import especialidades from '../../../mocks/especialidades';
 import info from 'src/app/mocks/info';
 
 @Component({
