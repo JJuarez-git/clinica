@@ -1,27 +1,49 @@
 <div class="especialidad fadeIn">
-
-   <ng-container *ngIf="especialidad; else notFound">
-      <section class="section-bg-color">
-         <div class="container">
-            <div class="jumbotron">
-               <h2>{{especialidad.title}}</h2>
+    <ng-container *ngIf="especialidad; else notFound">
+        <section class="section-bg-color">
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>{{ especialidad.title }}</h2>
+                </div>
             </div>
-         </div>
-      </section>
-      <section class="section-no-bg">
-         <div class="container">
-            <p>{{especialidad.info}}</p>
-         </div>
-      </section>
-   </ng-container>
-
-   <ng-template #notFound>
-      <section class="section-bg-color">
-         <div class="container">
-            <div class="jumbotron">
-               <h2>No existe esa página</h2>
+        </section>
+        <section class="section-no-bg">
+            <div class="container">
+                <div class="especialidad-grid">
+                    <div class="space-y-1 parrafos">
+                        <p *ngFor="let p of parrafos">{{ p }}</p>
+                    </div>
+                    <div class="card shadow text-center">
+                        <div class="card-title">
+                            <p class="title text-primary">¿Necesitas ayuda?</p>
+                        </div>
+                        <div class="card-content space-y-1">
+                            <p>Ponte en contacto con nosotros, estaremos encantados de poder ayudarte con cualquier problema que tengas.</p>
+                            <a class="btn btn-primary d-inline-block shadow" title="Contacto" [routerLink]="['/contacto']">
+                                <mat-icon aria-hidden="false" aria-label="arrow forward">arrow_forward</mat-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-         </div>
-      </section>
-   </ng-template>
+        </section>
+        <section class="section-no-bg">
+            <div class="container">
+                <div class="space-y-0-5">
+                    
+                </div>
+            </div>
+        </section>
+    </ng-container>
+
+    <ng-template #notFound>
+        <section class="section-bg-color">
+            <div class="container">
+                <div class="jumbotron">
+                    <h2>No existe esa página</h2>
+                </div>
+            </div>
+        </section>
+    </ng-template>
 </div>

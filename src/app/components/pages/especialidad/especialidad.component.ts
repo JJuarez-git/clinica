@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { getEspecialidadByTitle } from '../../../mocks/especialidades';
-
-interface Especialidad {
-   title: string,
-   info: string
-}
+import { Especialidad, getEspecialidadByTitle } from '../../../mocks/especialidades';
 
 @Component({
    selector: 'app-especialidad',
@@ -15,13 +10,14 @@ interface Especialidad {
 export class EspecialidadComponent implements OnInit {
 
    especialidad:Especialidad | undefined;
+   parrafos:string[] | undefined = []
 
    constructor(private activatedRoute: ActivatedRoute) { }
 
    ngOnInit(): void {
       this.activatedRoute.params.subscribe(params => {
-         const obj = getEspecialidadByTitle(params['name'])
-         this.especialidad = obj
+         this.especialidad = getEspecialidadByTitle(params['name'])
+         this.parrafos = this.especialidad?.info.split('\n')
       })
    }
 
