@@ -1,0 +1,41 @@
+.equipo .card {
+    display: flex;
+}
+
+.equipo .card img {
+    width: 60px;
+}
+
+.equipo .card h5 span:nth-child(2) {
+    margin-top: .3em;
+}
+
+.equipo .card h6 {
+    font-size: 1.1em;
+}
+
+.logros {
+    margin-top: 2em;
+}
+
+.equipo .card ul {
+    margin-top: .75em;
+    list-style: inside;
+    /* padding-left: 1.5em; */
+}
+
+.equipo .card ul > li {
+    margin: .5em 0;
+}
+
+.equipo-img-div {
+    display: none;
+    margin-top: .5em;
+    margin-right: 1em;
+}
+
+@media (min-width: 600px) {
+    .equipo-img-div {
+        display: block;
+    }
+ }

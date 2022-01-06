@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { equipo } from 'src/app/mocks/equipo';
 import info from 'src/app/mocks/info';
 
 @Component({
@@ -10,6 +11,7 @@ import info from 'src/app/mocks/info';
 export class EquipoComponent implements OnInit {
 
   title = `Equipo Médico | ${info.title}`
+  data = equipo
 
   constructor(
     private titleService: Title
