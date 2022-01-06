@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import info from 'src/app/mocks/info';
-import especialidades from '../../../mocks/especialidades';
+import { especialidades } from '../../../mocks/especialidades';
 
 @Component({
   selector: 'app-especialidades',
@@ -12,6 +12,7 @@ export class EspecialidadesComponent implements OnInit {
 
   title = `Especialidades | ${info.title}`
   data = especialidades
+  clinica = info.title
 
   constructor(
     private titleService: Title

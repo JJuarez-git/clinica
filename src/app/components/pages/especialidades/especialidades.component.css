@@ -4,6 +4,10 @@
    gap: 1em;
 }
 
+.esp-info {
+   line-height: 1.1em;
+}
+
 @media (min-width: 600px) {
    .esp-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));

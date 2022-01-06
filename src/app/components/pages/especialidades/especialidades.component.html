@@ -10,7 +10,7 @@
    <section class="section-no-bg">
       <div class="container">
          <div class="jumbotron text-center">
-            <p class="sub-title">En Clinica Dental Lillo somos</p>
+            <p class="sub-title">En {{clinica}} somos</p>
             <p class="sub-title"><span class="text-primary">especilistas</span> en</p>
             <mat-icon aria-hidden="false" aria-label="arrow down icon" style="margin: 0;">keyboard_double_arrow_down</mat-icon>
          </div>
@@ -21,11 +21,11 @@
       <div class="esp-grid container">
          <div class="card bg-section" *ngFor="let value of data">
             <div class="card-title">
-               <p class="text-600">{{value.title}}</p>
+               <p class="text-500 sub-title">{{value.title}}</p>
             </div>
             <div class="hr bg-primary"></div>
             <div class="card-body">
-               <p>{{value.info | slice:0:100}}...</p>
+               <p class="esp-info">{{value.info | slice:0:160}}...</p>
             </div>
             <div class="card-buttons">
                <a class="btn btn-primary d-inline-block" [routerLink]="[value.title]" (click)="goTop()">Leer +</a>
