@@ -5,7 +5,8 @@ const footerData = {
    contacto: {
       title: 'Contacto',
       info: {
-         movil: info.phone,
+         tlfn: info.phone,
+         movil: info.mobile,
          email: info.email,
          localizacion: info.location
       }
@@ -15,7 +16,7 @@ const footerData = {
       links: [
          {
             name: 'Facebook',
-            url: '#',
+            url: 'https://www.facebook.com/',
             icon: 'assets/icons/facebook.svg'
          },
          {
@@ -34,16 +35,12 @@ const footerData = {
       title: 'Horario',
       dias: [
          {
-            dia: 'Lunes - Viernes',
-            horas: '00:00 - 00:00'
+            dia: 'Miércoles',
+            horas: '10:00 - 14:00 / 16:00 - 20:00'
          },
          {
             dia: 'Sábado',
-            horas: '00:00 - 00:00'
-         },
-         {
-            dia: 'Domingo',
-            horas: 'Cerrado'
+            horas: '10:00 - 14:00'
          }
       ]
    },
