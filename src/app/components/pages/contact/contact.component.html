@@ -21,16 +21,13 @@
          <div class="grid-col">
             <div class="card bg-section">
                <div class="card-title">
-                  <p class="sub-title">Llama o escríbenos</p>
+                  <p class="sub-title">Dirección</p>
                </div>
                <div class="hr bg-primary"></div>
                <div class="card-body">
                   <ul>
-                     <li id="contact-movil">
-                        {{data.contacto.info.movil}}
-                     </li>
-                     <li id="contact-email">
-                        {{data.contacto.info.email}}
+                     <li id="contact-locate">
+                        {{data.contacto.info.localizacion}}
                      </li>
                   </ul>
                </div>
@@ -40,13 +37,16 @@
          <div class="grid-col">
             <div class="card bg-section">
                <div class="card-title">
-                  <p class="sub-title">Dirección</p>
+                  <p class="sub-title">Llama o escríbenos</p>
                </div>
                <div class="hr bg-primary"></div>
                <div class="card-body">
                   <ul>
-                     <li id="contact-locate">
-                        {{data.contacto.info.localizacion}}
+                     <li id="contact-movil">
+                        M. {{data.contacto.info.movil}} / T. {{data.contacto.info.tlfn}}
+                     </li>
+                     <li id="contact-email">
+                        {{data.contacto.info.email}}
                      </li>
                   </ul>
                </div>

@@ -4,6 +4,10 @@
    gap: 1em;
 }
 
+.grid-col {
+   height: fit-content;
+}
+
 .card {
    height: 100%;
 }
