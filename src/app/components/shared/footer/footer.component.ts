@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import footerData from 'src/app/mocks/footer';
 import info from '../../../mocks/info';
 
@@ -7,16 +7,12 @@ import info from '../../../mocks/info';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
 
    title = info.title
    year = new Date().getFullYear();
    footer = footerData
 
   constructor() { }
-
-  ngOnInit(): void {
-   
-  }
 
 }
