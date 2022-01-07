@@ -38,16 +38,11 @@ header {
 .nav-header h1 > span {
     padding: 0px 0;
     display: block;
-    /* font-weight: 300; */
 }
 
 .nav-header h1 > span:nth-child(1) {
     font-size: .8em;
 }
-
-/* .nav-header h1 > span:nth-child(2) {
-    font-weight: 400;
-} */
 
 .nav-list ul {
     position: absolute;
@@ -106,7 +101,6 @@ header {
     }
     .nav-list ul {
         max-height: initial !important;
-        /* height: initial !important; */
         position: initial;
         padding-bottom: 0;
         border-bottom: none;

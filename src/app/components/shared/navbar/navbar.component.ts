@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import slide from 'src/app/animations/slide';
 import info from '../../../mocks/info';
 
@@ -26,15 +26,13 @@ const nav_links = [
   styleUrls: ['./navbar.component.css'],
   animations: [slide]
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   title = info.title.split(' ')
   links = nav_links
   open = false
 
   constructor() { }
-
-  ngOnInit(): void { }
 
   get stateName() {
     return this.open ? 'in' : 'out'
