@@ -7,18 +7,30 @@
 .parrafos {
     width: 90%;
     text-align: justify;
-    margin: auto;
+    margin: 0 auto;
     line-height: 1.1em;
+}
+
+.help-banner {
+    height: fit-content;
 }
 
 @media (min-width: 600px) {
     .parrafos {
         width: 100%;
     }
+    .help-banner {
+        width: 60%;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 768px) {
     .especialidad-grid {
         grid-template-columns: 2fr 1fr;
+    }
+    .help-banner {
+        width: 100%;
     }
 }

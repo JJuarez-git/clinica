@@ -13,13 +13,14 @@
                     <div class="space-y-1 parrafos">
                         <p *ngFor="let p of parrafos">{{ p }}</p>
                     </div>
-                    <div class="card shadow text-center">
+                    <div class="card shadow text-center help-banner">
                         <div class="card-title">
                             <p class="title text-primary">¿Necesitas ayuda?</p>
                         </div>
-                        <div class="card-content space-y-1">
+                        <div class="card-body space-y-1">
                             <p>Ponte en contacto con nosotros, estaremos encantados de poder ayudarte con cualquier problema que tengas.</p>
-                            <a class="btn btn-primary d-inline-block shadow" title="Contacto" [routerLink]="['/contacto']">
+                            <img src="assets/img/logo-192.png" alt="logo" height="80" width="80" />
+                            <a class="btn btn-primary d-block shadow" title="Contacto" [routerLink]="['/contacto']" (click)="goTop()">
                                 <mat-icon aria-hidden="false" aria-label="arrow forward">arrow_forward</mat-icon>
                             </a>
                         </div>

@@ -21,4 +21,8 @@ export class EspecialidadComponent implements OnInit {
       })
    }
 
+   goTop(): void {
+      window.scrollTo(0,0)
+   }
+
 }
