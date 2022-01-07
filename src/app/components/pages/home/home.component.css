@@ -1,3 +1,102 @@
-.home {
-    /* height: 200vh; */
+section:not(section:first-child) {
+    padding: 4em 0;
+}
+
+/*WELCOME*/
+#welcome p {
+    width: 100%;
+    line-height: 1.3em;
+}
+
+/*ESPECIALIDADES*/
+.esp-home-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.esp-home-grid > .card {
+    height: fit-content;
+    padding: 0;
+}
+
+.esp-home-grid > .card details summary {
+    list-style: none;
+    position: relative;
+    padding: 1em;
+    padding-left: 2em;
+    cursor: pointer;
+}
+
+.esp-home-grid > .card details summary::before {
+    content: "\e409";
+    font-family: "Material Icons";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0.5em;
+    font-size: 1.2em;
+    transition: .4s;
+}
+
+.esp-home-grid > .card details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+details[open] summary ~ * {
+    animation: sweep 0.5s ease-in-out;
+}
+
+.esp-home-grid > .card details p {
+    padding: 1em;
+    padding-top: 0;
+    line-height: 1.1em;
+}
+
+/*EQUIPO*/
+.equipo-home-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1em;
+}
+
+.equipo-home-grid > .card {
+    display: flex;
+    justify-content: start;
+}
+
+.equipo-home-grid img {
+    margin-right: .4em;
+}
+
+@media (min-width: 600px) {
+    .esp-home-grid, .equipo-home-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .equipo-home-grid > .card {
+        justify-content: center;
+    }
+    #welcome p {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .esp-home-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    #welcome p {
+        width: 50%;
+    }
+}
+
+@keyframes sweep {
+    0% {
+        opacity: 0;
+        margin-left: -10px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0px;
+    }
 }

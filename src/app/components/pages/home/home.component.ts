@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import info from 'src/app/mocks/info';
+import { especialidades } from '../../../mocks/especialidades';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   name = info.title
   title = `Inicio | ${info.title}`
+  espData = especialidades
 
   constructor(
     private titleService: Title
@@ -18,6 +20,10 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.titleService.setTitle(this.title)
+  }
+
+  goTop(): void {
+    window.scrollTo(0,0)
   }
 
 }

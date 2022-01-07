@@ -4,8 +4,8 @@
             <div class="jumbotron">
                 <h3 class="title">{{ name }}</h3>
                 <h2>
-                    TU <span class="text-primary">SONRISA</span>
-                    , TU <span class="text-primary">SALUD</span>
+                    TU <span class="text-primary">SONRISA</span> , TU
+                    <span class="text-primary">SALUD</span>
                 </h2>
                 <h4>
                     Nuestra sonrisa es nuestra carta de presentación y
@@ -17,32 +17,112 @@
     </section>
 
     <section class="section-no-bg">
-        <div class="container">
-            <!-- <img src="assets/img/clinica/woman-smiling.jpg" alt="" height="400"> -->
+        <div class="container text-center space-y-1" id="welcome">
+            <h4 class="sub-title">En <span class="text-primary">{{ name }}</span> cuidamos de ti</h4>
+            <p class="mx-auto">
+                Contamos con el mejor el mejor equipo y con los mejores
+                profesionales para poder ayudarte en lo que necesites
+                relacionado con tu salud dental.
+            </p>
         </div>
     </section>
 
-    <!--     <section class="section-bg-color">
+    <section class="section-bg-color">
         <div class="container">
-            <p>home works!</p>
-        
-            <button class="btn btn-primary">Boton</button>
-            <button class="btn btn-secondary">Boton</button>
-            
-            <p [innerText]="endo.title | uppercase"></p>
-            <p [innerText]="endo.info"></p>
+            <h5 class="title text-center">Especialidades</h5>
+
+            <div class="esp-home-grid">
+                <div class="card bg-white" *ngFor="let esp of espData">
+                    <details>
+                        <summary class="text-600">
+                            {{ esp.title }}
+                        </summary>
+                        <p>
+                            {{ esp.info | slice: 0:160 }}...
+                            <a
+                                class="text-primary"
+                                [routerLink]="['/especialidades', esp.title]"
+                                (click)="goTop()"
+                                >Seguir leyendo</a
+                            >
+                        </p>
+                    </details>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="section-no-bg">
-        <div class="container">
-            <p>home works!</p>
-        
-            <button class="btn btn-primary">Boton</button>
-            <button class="btn btn-secondary">Boton</button>
-            
-            <p [innerText]="endo.title | uppercase"></p>
-            <p [innerText]="endo.info"></p>
+        <div class="container space-y-1">
+            <div class="text-center space-y-0-5">
+                <h5 class="title">Equipo médico</h5>
+                <p>Nuestro equipo médico cualificado</p>
+            </div>
+            <div class="equipo-home-grid">
+                <div class="card">
+                    <div class="equipo-img-div">
+                        <img
+                            src="assets/img/logo-192.png"
+                            alt="logo"
+                            height="60"
+                            width="60"
+                        />
+                    </div>
+                    <div class="space-y-1">
+                        <h5>
+                            <span class="d-block sub-title text-primary"
+                                >Dra. Inés María Lominchar</span
+                            >
+                            <span class="d-block text-300">Odontóloga</span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="equipo-img-div">
+                        <img
+                            src="assets/img/logo-192.png"
+                            alt="logo"
+                            height="60"
+                            width="60"
+                        />
+                    </div>
+                    <div class="space-y-1">
+                        <h5>
+                            <span class="d-block sub-title text-primary"
+                                >Dr. Raúl Rivera</span
+                            >
+                            <span class="d-block text-300">Odontólogo</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a
+                    class="btn btn-outlined-primary"
+                    [routerLink]="['/equipo']"
+                    (click)="goTop()"
+                    >Ver toda la información</a
+                >
+            </div>
         </div>
-    </section> -->
+    </section>
+
+    <section class="section-bg-color">
+        <div class="container space-y-1-5">
+            <div class="space-y-0-5">
+                <h5 class="title text-center">Visita nuestra clínica</h5>
+                <p class="text-center">
+                    Nuestros datos de contacto a tu disposición
+                </p>
+            </div>
+            <div class="text-center">
+                <a
+                    class="btn btn-primary d-inline-block"
+                    [routerLink]="['/contacto']"
+                    (click)="goTop()"
+                    >Datos contacto</a
+                >
+            </div>
+        </div>
+    </section>
 </div>
