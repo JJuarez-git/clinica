@@ -8,7 +8,6 @@ import { EspecialidadComponent } from './components/pages/especialidad/especiali
 
 const routes: Routes = [
   {path: '', redirectTo: 'inicio',  pathMatch: 'full'},
-  /* {path: '**', redirectTo: 404, pathMatch: 'full'}, */
   {path: 'inicio', component: HomeComponent, pathMatch: 'full'},
   {path: 'especialidades', component: EspecialidadesComponent, pathMatch: 'full'},
   {path: 'especialidades/:name', component: EspecialidadComponent},

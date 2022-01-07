@@ -82,6 +82,10 @@
    display: inline-block;
 }
 
+.d-flex {
+   display: flex;
+}
+
 .w-25 {
    width: 25% !important;
 }
@@ -96,6 +100,10 @@
 
 .w-100 {
    width: 100% !important;
+}
+
+.mx-auto {
+   margin: 0 auto;
 }
 
 .space-y-0-5 > * {
@@ -122,6 +130,7 @@
    color: #fff;
    border-radius: 3px;
    cursor: pointer;
+   transition: .4s;
 }
 
 .btn-primary {
@@ -130,6 +139,17 @@
 
 .btn-primary:hover {
    background-color: var(--primary-color-hover);
+}
+
+.btn-outlined-primary {
+   background-color: #fff;
+   color: var(--primary-color);
+   border: 1px solid var(--primary-color);
+}
+
+.btn-outlined-primary:hover {
+   background-color: var(--primary-color);
+   color: #fff;
 }
 
 .btn-secondary {
@@ -227,7 +247,6 @@
 .card {
    padding: 1em;
    border-radius: 8px;
-   background-color: #fff;
 }
 
 .card .card-title {
