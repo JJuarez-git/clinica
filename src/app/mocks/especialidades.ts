@@ -11,13 +11,13 @@ export const especialidades: Especialidad[] = [
       img: 'assets/img/clinica/woman-smiling.jpg'
    },
    {
-      title: "Peridoncia",
+      title: "Periodoncia",
       info: "La periodontitis, también conocida como piorrea es la enfermedad que afecta a las encías. Consiste en que por una falta de cepillado o eficacia en él las bacterias se acumulan en forma de sarro debajo de las encías, provocando inflamación de éstas y pérdida progresiva de hueso, pudiendo hacer que los dientes se muevan e incluso que se pierdan.\n Tener unas encías sanas es muy importante, ya que sin ellas no hay dientes sanos. El tratamiento indicado para este tipo de enfermedad son los raspados y alisados radiculares, en donde se retira todo el cálculo, tanto subgingival como supragingival. Después hay que seguir unos mantenimientos para que las encías continúen sanas. Y en el caso de que haber perdido hueso, en ocasiones se puede recuperar con una sencilla cirugía.\n Recordemos que esta enfermedad no solo afecta a los dientes, también a los implantes, por eso es necesario tener siempre una buena higiene bucal. Para ello deberemos cepillarnos los dientes 3 veces al día e implementar los cepillos interdentales.",
       img: 'assets/img/clinica/woman-smiling.jpg'
    },
    {
       title: "Implantología",
-      info: "Es la especialidad odontológica que se encarga de colocar los implantes para sustituir piezas ausentes que se han perdido por caries o por periodontitis. Los implantes están hechos del material sintético más compatible que hay con el ser humano, el titanio.\n Un implante está constituido por el propio implante que está dentro del hueso y la corona que va encima, para la cuál hay que esperar 3 meses después de la colocación del implante. Es una solución fija y con la cuál los pacientes están muy contentos.",
+      info: "Es la especialidad odontológica que se encarga de colocar los implantes para sustituir piezas ausentes que se han perdido por caries o por periodontitis. Los implantes están hechos del material sintético más compatible que hay con el ser humano, el titanio.\n Un implante está constituido por el propio implante que está dentro del hueso y la corona que va encima, para la cual hay que esperar 3 meses después de la colocación del implante. Es una solución fija y con la cual los pacientes están muy contentos.",
       img: 'assets/img/clinica/woman-smiling.jpg'
    },
    {
