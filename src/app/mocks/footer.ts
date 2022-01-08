@@ -16,7 +16,7 @@ const footerData = {
       links: [
          {
             name: 'Facebook',
-            url: 'https://www.facebook.com/',
+            url: 'https://www.facebook.com/profile.php?id=100076643659219',
             icon: 'assets/icons/facebook.svg'
          },
          {
