@@ -1,6 +1,6 @@
 <header>
     <div class="nav-bar container">
-        <div class="nav-header" [routerLink]="['inicio']" (click)="closeNavFromLink()">
+        <div class="nav-header" [routerLink]="['/']" (click)="closeNavFromLink()">
             <img src="assets/img/logo-192.png" alt="clinica lillo logo" height="50" width="50">
             <h1>
                 <span>{{title[0]}} {{title[1]}}</span>
@@ -13,7 +13,7 @@
             <mat-icon *ngIf="!open" id="menu-icon" class="iconx1_5" aria-hidden="false" aria-label="menu icon" (click)="openNav()">menu</mat-icon>
             <ul [@slide]="stateName">
                 <li *ngFor="let value of links">
-                    <a [routerLink]=[value.link] routerLinkActive="active-link" (click)="closeNavFromLink()">{{value.title | uppercase}}</a>
+                    <a [routerLink]=[value.link] routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }" (click)="closeNavFromLink()">{{value.title | uppercase}}</a>
                 </li>
             </ul>
         </nav>

@@ -5,7 +5,7 @@ import info from '../../../mocks/info';
 const nav_links = [
   {
     title: 'Inicio',
-    link: 'inicio'
+    link: '/'
   }, 
   {
     title: 'Especialidades',
